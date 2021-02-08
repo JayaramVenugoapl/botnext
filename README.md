@@ -1,24 +1,66 @@
-# README
+# BotsNext
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+General requirements:
 
-* Configuration
+- Ruby 2.6.5
+- Rails 6.0.2
+- PG
+- RSpec
 
-* Database creation
+## Running the app
 
-* Database initialization
+### Check out the repo
 
-* How to run the test suite
+```
+$ git clone git@github.com:JayaramVenugoapl/botnext.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ cd botnext
+```
 
-* Deployment instructions
+### Setup
 
-* ...
+1. Install pg
+2. Install bundler: `gem install bundler`
+3. Install gems: `bundle install`
+4. Setup DB: `rails db:create`
+
+### Usage
+
+1. Start rails && react server locally
+
+```
+
+$ rails start
+
+```
+
+## Running Tests
+
+1. Make sure "rspec" is installed by running:
+
+   ```sh
+       $ bundle show rspec
+   ```
+
+   If a path is listed, then rspec is installed.
+
+2. Run rspec for the spec folder through bundle:
+   ```sh
+       $ bundle exec rspec spec
+   ```
+
+# API
+
+## Registration & Login
+
+| resource      | description |
+| :------------ | :---------- |
+| `/api/posts ` | List Posts  |
